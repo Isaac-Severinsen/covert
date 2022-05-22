@@ -1,6 +1,5 @@
 '''
-Isaac Severinsen 31/03/2021
-Refactoring of COVERT_new.py
+Isaac Severinsen 23/05/2022
 
 COVERT (Classless oversampling technique) is designed to reblance a dataset that does not include classes.
 This was designed for balancing industrial steady state data so that rarer (startup and shutdown) conditions
@@ -13,6 +12,7 @@ Inputs:
 - input_list, list of variable names that define the input parameters only
 - Various Optional Parameters
     -  verbose, bool, verbosity boolean, default is True
+    -  rebalance_ratio, float determining how many synthetic samples to generate reblance_ratio = 1 means the number of synthetic samples generated is equal to the number of raw datapoints supplied.
 
 '''
 
